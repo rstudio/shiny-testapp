@@ -1,5 +1,3 @@
-library(shinyIncubator)
-
 shinyUI(pageWithSidebar(
   headerPanel("Setting inputs"),
   sidebarPanel(
