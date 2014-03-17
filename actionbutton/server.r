@@ -3,7 +3,7 @@ shinyServer(function(input, output) {
     # Take a dependency on input$goButton
     input$goButton
 
-    # Use isolate() to avoid dependency on input$obs
+    # Use isolate() to avoid dependency on input$goButton
     isolate(input$n)
   })
 })
