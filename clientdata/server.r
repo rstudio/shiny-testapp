@@ -1,8 +1,8 @@
 shinyServer(function(input, output, session) {
 
   output$image <- renderImage({
-    width  <- session$clientData$output_plot_width
-    height <- session$clientData$output_plot_height
+    width  <- session$clientData$output_image_width
+    height <- session$clientData$output_image_height
 
     # A temp file to save the output. This file will be removed later by renderImage
     outfile <- tempfile(fileext='.png')
