@@ -78,7 +78,7 @@ shinyServer(function(input, output, clientData, session) {
     updateCheckboxGroupInput(session, "inCheckboxGroup2",
       label = paste("checkboxgroup label", x),
       choices = cb_options,
-      selected = sprintf("option label %d 2", x)
+      selected = sprintf("option-%d-2", x)
     )
 
     # Radio group =====================================================
@@ -95,7 +95,7 @@ shinyServer(function(input, output, clientData, session) {
     updateRadioButtons(session, "inRadio2",
       label = paste("Radio label", x),
       choices = r_options,
-      selected = sprintf("option label %d 2", x)
+      selected = sprintf("option-%d-2", x)
     )
 
 
@@ -114,7 +114,7 @@ shinyServer(function(input, output, clientData, session) {
     updateSelectInput(session, "inSelect2",
       label = paste("Select label", x),
       choices = s_options,
-      selected = sprintf("option label %d 2", x)
+      selected = sprintf("option-%d-2", x)
     )
 
 

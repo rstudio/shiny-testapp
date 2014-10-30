@@ -1,8 +1,7 @@
 shinyUI(pageWithSidebar(
   headerPanel("Setting inputs"),
   sidebarPanel(
-    p("This app tests the update functions for Shiny inputs."),
-    numericInput("controller", "This controls other inputs:",
+    sliderInput("controller", "This slider controls other inputs:",
                 min = 1, max = 20, value = 15),
 
     textInput("inText",  "Text input:",   value="starting value"),
