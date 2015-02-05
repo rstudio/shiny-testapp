@@ -2,6 +2,7 @@ ui <- fluidPage(
   titlePanel("Input appearance"),
   sidebarLayout(
     sidebarPanel(
+      p("Some input items below have NULL labels."),
       textInput("text1", "Text", value = "Starting value"),
       textInput("text2", NULL, value = "No label"),
 
